@@ -1,0 +1,462 @@
+:root{
+    --default-color-background-color: #FEC701;
+    --1default-color-background-color: #474A8A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.main-container{
+    height: auto;
+    width: 100%;
+}
+.sub-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    margin-top: 8vh;
+}
+.nav-bar{
+    height: 8vh;
+    width: 100%;
+    background-color: var(--default-color-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 2px 10px;
+    position: fixed;
+    z-index: 112111;
+    top: 0;
+}
+.nav-bar img{
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.nav-bar h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.box-container{
+    height: 100VH;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-container > div{
+    margin: 0 20px;
+}
+.box{
+    height: 40vh;
+    width: 40vh;
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px #818283;   
+     overflow: hidden;
+}
+.box:hover{
+    height: 41vh;
+    width: 41vh;
+    background: rgba(205, 203, 203, 0.208);
+    transition: all .5s ease;
+}
+.sub-header{
+    height: 5vh;
+    width: 100%;
+    background-color: var(--default-color-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-header h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.sub-context {
+    height: 95%;
+    width: 100%;
+    padding: 17px 16px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    overflow-y: auto;
+}
+.box-context {
+    height: 75%;
+    width: 100%;
+    padding: 25px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+.box-context  p{
+    font-size: 17px;
+}
+.sub-context p{
+    font-size: 14px;
+    font-family: "Quicksand", ;
+}
+.link h6{
+    margin: 0 30px;
+    text-align: right;
+    font-size: 18px;
+    color: var(--default-color-background-color);
+    cursor: pointer;
+    text-decoration: underline 1px;
+}
+.link h6:hover{
+    color: var(--1default-color-background-color);
+}
+.sidebar{
+    height: 92vh;
+    width: 31%;
+    background-color: var(--default-color-background-color);
+	/*changes here*/
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1px;
+    padding: 50px 0;
+    overflow: scroll;
+    overflow-x: hidden;
+    top: 8vh;
+}
+/*changes here*/
+.sidebar.active{
+	display:none;
+}
+.sidebar h3{
+    height: fit-content;
+    width: 85%;
+    padding: 20px 0;
+    background-color: #474A8A;
+    border-radius: 0 23px 23px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: aliceblue;
+    border: 1px solid white;
+    border-left: none;
+    cursor: pointer;
+}
+.sidebar h3:hover{
+    width: 90%;
+    padding: 21px 0;
+    transition: all .4s ease;
+    background-color: #787CB5;
+    font-size: 24px;
+    }
+    .container-child{
+        height: 92vh;
+        /*changes here*/
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        overflow-y: auto;
+        
+    }
+    .box-child{
+        height: 55vh;
+        width: 65%;
+        border-radius: 25px;
+        box-shadow: 2px 2px 6px #818283;   
+        overflow: hidden;
+    }
+    .box-child:last-child{
+        height:35vh ;
+    }
+    .sub-context p{
+        font-size: 15px;
+    }
+    .sub-header1{
+        height: 5vh;
+        width: 100%;
+        background-color: #474A8A;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: 0 15px ;
+    }
+    .sub-header1 h3{
+        font-size: 18px;
+        font-weight: 600;
+        color: aliceblue;
+    }
+    .header{
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header{
+        font-size:30px;
+        font-weight: 900;
+    }
+    .marg-bot{
+        margin-bottom: 15px;
+    }
+/*changes here*/
+/*toggle bar*/
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #2E2E2E;
+    border-radius: 25px;
+	
+}
+.toggle-button{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 30px;
+    top: .75rem;
+    right: 1rem;
+	cursor: pointer;
+    margin: 5px;
+}
+.nav-cont{
+	display:flex;
+    align-items: center;
+}
+.nav-cont h3{
+	margin-left: 20px;
+}
+
+
+
+/* land */
+
+.land-box{
+    height: 60vh;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 6px #818283;   
+     overflow: hidden;
+}
+.land-header{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--default-color-background-color);
+}
+.land-header h3{
+    font-size: 22px;
+}
+.land-context{
+    height: 95%;
+    width: 100%;
+    padding: 20px 16px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    overflow-y: auto;
+}
+.land-context p{
+    font-size: 20px;
+}.main-header{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-header h3{
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "Quicksand", sans-serif;
+}
+.main-header span{
+    background-color: var(--1default-color-background-color);
+    padding: 10px 30px;
+    border-radius: 50%;
+    font-size: 70px;
+    margin: 0 30px;
+}
+
+.nav-header{
+    cursor: pointer;
+}
+
+.nav-header:hover{
+    color: var(--1default-color-background-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SYNTAX COLOR*/
+.opse-numbers{
+    color: rgb(141, 141, 141);
+    padding-right: 20px;
+}
+.numbers{
+    color: rgb(141, 141, 141);
+    padding-right: 40px;
+}
+.pink{
+    color: rgb(232, 10, 47);
+}
+.yellow{
+    color: rgb(232, 232, 165);
+}
+.orange{
+    color: orange;
+}
+.white{
+    color: rgb(228, 228, 228);
+}
+.green{
+    color: green;
+    font-size: 13px;
+}
+.light-blue{
+    color: lightblue;
+}
+.marg{
+    margin-right: 20px;
+}
+.dark-syntax{
+    background-color: rgb(43, 41, 41);
+}
+
+
+/* PRE LOADER */
+#pre-loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(202, 199, 199, 0.553);
+}
+#pre-loader img:first-child{
+    height: 150px;
+    width: 150px;
+    z-index: 100;
+    border-radius: 50%;
+    display: block;
+}
+#pre-loader img:last-child{
+    height: 90px;
+    width: 90px;
+    z-index: 100;
+}
+@media screen and (max-width: 1280px){
+    .box-child{
+        width: 80%;
+    }
+    .sidebar{
+        width: 75%;
+    }
+    .sidebar h3{
+        width: 90%;
+        font-size: 20px;
+    }
+    .sub-container{
+        overflow: scroll;
+    }
+    .land-box{
+        width: 85%;
+    }
+    .main-header h3{
+        font-size: 50px;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .box-container{
+        flex-direction: column;
+        gap: 2rem;
+        height: auto;
+        overflow: hidden;
+        padding: 20px 0;
+        margin: 100px 0;
+        overflow-x: hidden;
+    }
+    .box{
+        width: 90%;
+    }
+    .box:hover{
+        width: 91%;
+    }
+    .sub-context p{
+        font-size: 13px;
+    }
+    .main-header h3{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 600px){
+    .sidebar{
+        width: 90%;
+        position: fixed;
+        z-index: 11111;
+    }
+    .container-child{
+        width: 100%;
+        position: fixed;
+    }
+    .land-box{
+        margin-top: 20vh;
+    }
+    .main-header{
+        font-size: 50px;
+        position: fixed;
+    }
+    .main-header h3{
+        font-size: 30px;
+    }
+    
+
+}
